@@ -1,0 +1,30 @@
+<div class="container">
+
+
+  <div *ngFor="let region of selectType">
+    <input type="radio" [value]="region.regionID" name="regionGroup" [id]="'region' + region.regionID"
+      (change)="onRegionChange(region.regionID)" />
+
+    <label [for]="'region' + region.regionID">{{ region.regionName }}</label>
+  </div>
+
+
+  <img [src]="area" class="allImg">
+
+  <div class="card" id="card">
+    <div class="card-body">
+      <div>
+        <label for="startTime">שעת התחלה:</label>
+        <input type="number" id="startTime" [(ngModel)]="timeObject.startTime" min="0" max="12" required />
+
+        <label for="endTime">שעת סיום:</label>
+        <input type="number" id="endTime" [(ngModel)]="timeObject.endTime" min="0" max="12" required />
+
+        <button (click)="submitTimes()">שלח</button>
+
+        <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+      </div>
+      <img [src]="clock" class="clock">
+    </div>
+  </div>
+</div>

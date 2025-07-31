@@ -1,0 +1,12 @@
+<div class="container">
+
+  <div class="card" id="card">
+    <div class="card-body">
+      <label>בחר את התאריך המתאים לך ליציאה</label>
+      <p>
+        <span for="expire">חודש </span>
+        <input type="date" id="expire" name="expire" [(ngModel)]="date" (change)="onDateChange($event)" />
+      </p>
+    </div>
+  </div>
+</div>

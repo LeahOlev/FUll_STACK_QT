@@ -1,0 +1,93 @@
+:host {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: #f0f2f5;
+    height: auto;
+
+  }
+
+  .login-box {
+    background-color: #fff;
+    padding: 3em;
+    box-shadow: 0 0.5em 0.8em rgba(0, 0, 0, 0.1);
+    opacity: 0.75;
+    width: 20vw;
+    height: 55vh;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .input-container {
+    margin-bottom: 1.5em;
+  }
+
+  .input-container label {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2em;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 0.5em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.3em;
+    font-size: 1.7em;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: green;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 20%;
+    padding: 1.8em;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: rgb(58, 172, 81);
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .errorText {
+    color: pink;
+    float: left;
+    font-weight: bold;
+  }
+}
+
+.input-container {
+  position: relative;
+}
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

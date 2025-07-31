@@ -1,0 +1,54 @@
+.container {
+    text-align: center;
+    margin-top: 35em;
+    display: flex;
+}
+
+.card{
+
+}
+
+mat-form-field{
+    width: 8vw;
+    height: 8vh;
+    text-align: center;
+    margin-left: 3em;
+}
+
+mat-label{
+    font-size: 2em;
+    text-align: center;
+}
+
+
+input {
+    width: 20vw;
+    font-size: 2em;
+
+}
+
+img {
+    width: 25vw;
+    height: 20vh;
+}
+
+#card {
+    position: static;
+}
+
+button{
+    width: 10vw;
+    height: 5vh;
+    margin-top: 5em;
+}
+
+.budget-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.error {
+    color: red;
+}

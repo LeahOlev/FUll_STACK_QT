@@ -1,0 +1,93 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20em;
+  gap: 1.5em;
+}
+
+.card {
+  background-color: #fff;
+  border: 0.1em solid #ddd;
+  border-radius: 1em;
+  box-shadow: 0 0.3em 0.5em rgb(85, 85, 85);
+  margin: 1em;
+  width: 20em;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+
+
+.card {
+  border: 0.1em solid #ccc;
+  border-radius:0.8em;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor:cell;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-caption {
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.card-selection {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.select {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+.quantity-popup {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 0.1em solid #ccc;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.quantity-popup input {
+  width: 8em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.quantity-popup button {
+  width: 10em;
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  
+}
+
+.quantity-popup button:hover {
+  background-color: #0056b3;
+  /* Darker shade on hover */
+}
+
+label {
+  font-size: 2em;
+}

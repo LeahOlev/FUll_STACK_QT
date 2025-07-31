@@ -1,0 +1,100 @@
+<!-- <section>
+    <h5>תקציב</h5>
+    <label>מה התקציב שלך למסלול?</label>
+    <br>
+    <input>
+</section> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+ 
+  <div class="card" id="card">
+    <div class="card-body">
+      <div>
+        <label for="startTime">הזן את התקציב שלך  לטיול</label>
+        <br>
+        <input type="number" id="budget" [(ngModel)]="budget" min="0" [max]="maxBudget" required />
+
+        <br>
+        <button (click)="submitBudget()">אשר</button>
+
+      </div>
+        <img [src]="money" >
+
+    </div>
+  </div>
+
+  <div class="card" id="card">
+    <div class="card-body">
+         
+<label>קהל יעד</label>
+<div class="groupe">
+  <div class="gruopeChild">
+    <div class="gruopeChildButton">
+    <button (click)="onClickWomank()">נשים-קבוצה</button></div>
+    @if(clickWoman) {
+    <mat-form-field class="select">
+      <mat-label>רמת קושי:</mat-label>
+      <mat-select [(value)]="selectedLevelWoman" class="drop">
+        <mat-option value="קשה מאד">קשה מאד</mat-option>
+        <mat-option value="קשה">קשה</mat-option>
+        <mat-option value="קל">קל</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    }
+  </div>
+
+
+  <div class="gruopeChild">
+    <div class="gruopeChildButton">
+    <button (click)="onClickman()">גברים-קבוצה</button></div>
+    @if(clickMan) {
+      <mat-form-field  class="select">
+        <mat-label>רמת קושי:</mat-label>
+        <mat-select [(value)]="selectedLevelMan" class="drop">
+          <mat-option value="קשה מאד">קשה מאד</mat-option>
+          <mat-option value="קשה">קשה</mat-option>
+          <mat-option value="קל">קל</mat-option>
+        </mat-select>
+      </mat-form-field>
+    }
+
+  </div>
+  <div class="gruopeChild">
+    <div class="gruopeChildButton">
+      <button (click)="onClickFamily()">משפחות</button>
+    </div>
+    @if(clickFamily){
+      <mat-form-field  class="select">
+        <mat-label>רמת קושי:</mat-label>
+        <mat-select [(value)]="selectedLevelFamily" class="drop">
+          <mat-option value="קשה מאד">קשה מאד</mat-option>
+          <mat-option value="קשה">קשה</mat-option>
+          <mat-option value="קל">קל</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    }
+
+  </div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

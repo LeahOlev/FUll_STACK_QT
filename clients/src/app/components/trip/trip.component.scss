@@ -1,0 +1,28 @@
+img{
+    width: 20vw;
+    height: 20vh;
+    justify-self: left;
+}
+
+.name{
+    border: 0.1em solid black;
+    font-size:2em;
+    width: 20vw;
+    height:4vh;
+    margin: 0.1em;
+    border-radius: 0.2em;
+    text-align: center;
+}
+.all{
+    display: grid;
+}
+section{
+    border: solid green 0.2em;
+    width:35vw;
+    justify-self: center;
+
+}
+section div{
+    display: flex;
+    margin: 2em;
+}

@@ -1,0 +1,61 @@
+<!-- <input type="text" formControlName="firstName" placeholder="שם פרטי" />
+<input type="text" formControlName="lastName" placeholder="שם משפחה" />
+<input type="email" formControlName="email" placeholder="מייל אישי" />
+<input type="text" formControlName="ID" placeholder="מספר זהות" /> -->
+
+
+<div class="login-container">
+  <div class="login-box">
+    <h2>בחרת להצטרף אלינו:)</h2>
+    <form [formGroup]="formGroup" (ngSubmit)="close()">
+      <div class="input-container">
+        <input type="text" class="formControlLogin" formControlName="firstName" required placeholder="שם פרטי">
+        <span class="errorText" *ngIf="formGroup.get('firstName')?.touched && formGroup.get('firstName')?.invalid">
+          <ng-container *ngIf="formGroup.get('firstName')?.errors?.['required']">שדה חובה</ng-container>
+          <ng-container *ngIf="formGroup.get('firstName')?.errors?.['maxlength']">מקסימום 9 תווים</ng-container>
+        </span>
+      </div>
+      <div style="height:20px"> </div>
+      <div class="input-container">
+        <input type="text" class="formControlLogin" formControlName="lastname" required placeholder="שם משפחה">
+        <span class="errorText" *ngIf="formGroup.get('lastname')?.touched && formGroup.get('lastname')?.invalid">
+          <ng-container *ngIf="formGroup.get('lastname')?.errors?.['required']">שדה חובה</ng-container>
+          <ng-container *ngIf="formGroup.get('lastname')?.errors?.['maxlength']">מקסימום 9 תווים</ng-container>
+        </span>
+      </div>
+      <div class="input-container">
+        <input type="text" class="formControlLogin" formControlName="email" required placeholder="מייל אישי">
+        <span class="errorText" *ngIf="formGroup.get('email')?.touched && formGroup.get('email')?.invalid">
+          <ng-container *ngIf="formGroup.get('email')?.errors?.['required']">שדה חובה</ng-container>
+          <ng-container *ngIf="formGroup.get('email')?.errors?.['email']">מייל לא תקני</ng-container>
+        </span>
+      </div>
+
+
+      <div style="height:20px"> </div>
+      <div class="input-container password-wrapper">
+        <input [type]="passwordFieldType" formControlName="ID" required placeholder="מספר זהות" />
+        <!-- <span class="toggle-icon" (click)="toggleIdVisibility()">
+        </span>
+      
+        <span class="errorText" *ngIf="formGroup.get('ID')?.touched && formGroup.get('ID')?.invalid">
+          <ng-container *ngIf="formGroup.get('ID')?.errors?.['required']">שדה חובה</ng-container>
+          <ng-container *ngIf="formGroup.get('ID')?.errors?.['minlength'] || formGroup.get('ID')?.errors?.['maxlength']">
+            חייב להכיל בדיוק 9 ספרות
+          </ng-container>
+          <ng-container *ngIf="formGroup.get('ID')?.errors?.['pattern']">רק ספרות מותרות</ng-container>
+        </span> -->
+        <button type="button" (click)="toggleIdVisibility()">👁️</button>
+        <span class="errorText" *ngIf="formGroup.get('ID')?.touched && formGroup.get('ID')?.invalid">
+          <ng-container *ngIf="formGroup.get('ID')?.errors?.['required']">שדה חובה</ng-container>
+          <ng-container *ngIf="formGroup.get('ID')?.errors?.['pattern']">יש להזין 9 ספרות</ng-container>
+        </span>
+      </div>
+      <div (mouseenter)="mouseoverLogin=true" (mouseleave)="mouseoverLogin=false">
+        <button type="submit" [disabled]="formGroup.invalid">ברוכים הבאים</button>
+        @if(click){
+        }
+      </div>
+    </form>
+  </div>
+</div>
