@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="all" style="background-color: black;">
+      <div id="nav">
+        <li><img [src]="logo"></li>
+        <ul>
+          <li><a (click)="goToComponent('/navbar/home')">מסך הבית🏠</a></li>
+          <li><a (click)="goToComponent('/navbar/about_us')">נעים להכיר❤️</a></li>
+          <li><a (click)="goToComponent('/navbar/requirement')">דרישותיך🔍</a></li>
+        </ul>
+      </div>
+      <div id="login">
+        <ul>
+          <li><a (click)="openDialog()"><span class="glyphicon glyphicon-user"></span>הרשמה</a></li>
+          <li><a (click)="openDialog2()"><span class="glyphicon glyphicon-log-in"></span> אזור אישי</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </div>
+  <router-outlet></router-outlet>
+  <!-- <app-home></app-home> -->
+  <div class="sticky">
+    <a (click)="goToComponent('/connectToTrip')" class="calc">חשב מסלול </a>
+    <a href="#top" class="back">חזור לראש </a>
+  </div>
+
+</body>
+
+</html>

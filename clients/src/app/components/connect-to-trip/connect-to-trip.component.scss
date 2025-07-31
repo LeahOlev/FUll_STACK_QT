@@ -1,0 +1,64 @@
+.body{
+    // background-color:rgb(57, 51, 45);
+    
+
+    // img{
+
+    //     display: block;
+    //     margin: 0 auto;
+    // }
+    .img-header{
+        display:block;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg green);
+        color: black;
+        font-family: cursive;
+        box-shadow:  0 0.4em 1em black;
+        border-bottom: 0.6em solid green;
+        border-top:  0.6em solid green;
+        height: 96.5vh;
+        align-content: center;
+    }
+    .img{
+        font-size: 4rem;
+        margin-right: 1.5em;
+        animation:bonuce 8s initial;
+    }
+
+   
+  .img {
+    
+    background-image: '../public/assets/Hour-Glass.png'; /* תחליף את ה-path */
+    background-size: cover;
+    animation-name: flip;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes flip {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .connection{
+    text-align: center;
+    font-size:5em;
+  }
+
+
+    
+    // .img {
+    //     animation-name: flip;
+    //     animation-duration: 5s; /* ניתן לשנות את משך האנימציה */
+    //     animation-timing-function: ease-in-out; /* ניתן לשנות את תזמון האנימציה */
+    //     animation-iteration-count: 2; /* או infinite לשימוש חוזר */
+    //     animation-direction: alternate; // אם רוצים שהיפוך יתבצע ב-2 כיוונים */
+    //   }
+}
+
+

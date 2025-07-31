@@ -1,0 +1,30 @@
+.container{
+    margin-top: 15em;
+}
+span{
+    font-size:3.4em;
+}
+.card-body{
+    direction: rtl;
+    align-items: center;
+    
+}
+#expire{
+    margin-top: 3.5em;
+    margin-left: 5em;
+    width: 20vw;
+    height:10vh;
+    font-size: 2em;
+    text-align: center;
+
+}
+#day{
+    margin-left: 3.5em;
+    width: 20vw;
+    height:5vh;
+    font-size: 2em;
+    text-align: center;
+}
+#card{
+    position: static;
+}

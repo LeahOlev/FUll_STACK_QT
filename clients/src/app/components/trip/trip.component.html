@@ -1,0 +1,43 @@
+<h1>We succesed!!!! 😜🤗😉</h1>
+<h5>The perfect route for your experience:</h5>
+<div class="all">
+    <label (click)="changeP1()" [innerText]="name" class="name"></label>
+    <img [src]="img">
+    @if(pool1){
+    <section>
+        <div>small</div>
+        <div>duration</div>
+        <div>region</div>
+        <div>evryone</div>
+        <div>20</div>
+    </section>
+    }
+
+    <div (click)="changeP2()" [innerText]="name" class="name">...</div>
+    <img [src]="img">
+    @if(pool2){
+    <section>
+        <div>small</div>
+        <div>duration</div>
+        <div>region</div>
+        <div>evryone</div>
+        <div>20</div>
+    </section>
+    }
+
+    <div (click)="changeP3()" [innerText]="name" class="name">...</div>
+    <img [src]="img">
+    @if(pool3){
+    <section>
+        <div>small</div>
+        <div>duration</div>
+        <div>region</div>
+        <div>evryone</div>
+        <div>20</div>
+    </section>
+    }
+</div>
+
+
+<!-- <a (click)="goToComponent('/connectToTrip')">calculate a new trip</a> -->
+<button>Save track</button>
