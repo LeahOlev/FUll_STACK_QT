@@ -78,58 +78,55 @@ Finally, the best_route is formatted into a clear, structured JSON output. The o
   
     - **Attractions:** Water, Forests
 
-<br/>
 The algorithm will present a route that includes a water park or a stream trail with additional attractions, and a link to the relevant website.
 
-Example 2 - Couples Trip:
+- **Example 2 - Couples Trip:**
 
-Date: 25.04.2025
+    - **Date:** 25.04.2025
+    
+    - **Region:** Jerusalem
+    
+    - **Budget:** ₪100+
+    
+    - **Target Audience:** Couples
+    
+    - **Duration:** 6-8 hours
+    
+    - **Attractions:** Urban, Historical
 
-Region: Jerusalem
-
-Budget: ₪100+
-
-Target Audience: Couples
-
-Duration: 6-8 hours
-
-Attractions: Urban, Historical
-
-<br/>
 The algorithm will present a route that includes a visit to historical sites and urban activities, such as a tour of Mahane Yehuda market, and relevant links.
 
-Example 3 - Solo Traveler on a Budget:
+- **Example 3 - Solo Traveler on a Budget:**
+    
+    - **Date:** 10.05.2025
+    
+    - **Region:** North
+    
+    - **Budget:** Free
+    
+    - **Target Audience:** Solo travelers
+    
+    - **Duration:** 3-5 hours
+    
+    - **Attractions:** Nature
 
-Date: 10.05.2025
 
-Region: North
-
-Budget: Free
-
-Target Audience: Solo travelers
-
-Duration: 3-5 hours
-
-Attractions: Nature
-
-<br/>
 The algorithm will present a route focused on free natural attractions like hiking trails or scenic viewpoints, optimizing for minimal travel time and cost.
 
-Example 4 - Group Trip with a Specific Interest:
+- **Example 4 - Group Trip with a Specific Interest:**
+    
+    - **Date:** 08.06.2025
+    
+    - **Region:** South
+    
+    - **Budget:** Up to ₪100
+    
+    - **Target Audience:** Group
+    
+    - **Duration:** 5-7 hours
+    
+    - **Attractions:** Historical
 
-Date: 08.06.2025
-
-Region: South
-
-Budget: Up to ₪100
-
-Target Audience: Group
-
-Duration: 5-7 hours
-
-Attractions: Historical
-
-<br/>
 The algorithm will present a route that includes historical sites, monuments, and museums in the specified region, ensuring the itinerary fits within the budget and time constraints.
 
 ## 🤝 Questions and Support
