@@ -59,7 +59,7 @@ Finally, the best_route is formatted into a clear, structured JSON output. The o
   
     - **Attraction Types:** Select your preferred types of attractions (Water, Nature, Urban, Historical, etc.).
 
-2. **Generate a Route:** After filling in all the fields, click the "Apply Filter" button for the algorithm to plan your route.
+2. **Generate a Route:** After filling in all the fields, click the "חשב מסלול" button for the algorithm to plan your route.
 
 3. **Saving Trips:** To save the route or view previous trips, use the "Save Trip" or "Trip History" option on the profile page.
 
